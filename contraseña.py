@@ -48,8 +48,10 @@ vidas = input("QUE LARGURA DE CONTRASEÑA QUIERES>>> ")
 vidas = int(vidas)
 if vidas >= 18:
  print(f"{color.rojo}LARGURA MAXIMA EXCEDIDA PASARA A SER DE 18{color.fin}")
+ time.sleep(2)
 elif vidas < 5:
  print("LARGURA MINIMA PASARA A SER DE  5 ")
+ time.sleep(2)
  vidas = 5
 largura = 0
 con = ""
