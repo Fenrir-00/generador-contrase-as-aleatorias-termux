@@ -43,8 +43,8 @@ letrasm =['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 
 numeros = ['1','2','3','4','5','6','7','8','9','0']
 simbolos = ['.',',',':','!','?','#']
 contraseña =(random.choice(letras))+(random.choice(letras))+(random.choice(numeros))+(random.choice(letrasm))+(random.choice(simbolos))+(random.choice(numeros))+(random.choice(letrasm))+(random.choice(letrasm))+(random.choice(numeros))+(random.choice(letras))+(random.choice(numeros))+(random.choice(letras))+(random.choice(letrasm))+(random.choice(numeros))+(random.choice(letras))+(random.choice(letrasm))+(random.choice(numeros))+(random.choice(letras))
-usuario =input("ELIGE UN USUARIO>>> ")
-vidas = input("QUE LARGURA DE CONTRASEÑA QUIERES>>> ")
+usuario =input(f"{color.cyan}ELIGE UN USUARIO>>> ")
+vidas = input(f"{color.cyan}QUE LARGURA DE CONTRASEÑA QUIERES>>> ")
 vidas = int(vidas)
 if vidas >= 18:
  print(f"{color.rojo}LARGURA MAXIMA EXCEDIDA PASARA A SER DE 18{color.fin}")
