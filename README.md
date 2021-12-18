@@ -1,4 +1,4 @@
-# generador-contrase-as-aleatorias-termux
+# generador-contraseñas-aleatorias-termux
 * Segurdara la contraseña en un txt 
 * Atención si se vuelve a utilizar se borrará las antiguas conteaseñas
 instalacion
