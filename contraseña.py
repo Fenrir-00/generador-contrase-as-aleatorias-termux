@@ -43,14 +43,17 @@ letrasm =['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 
 numeros = ['1','2','3','4','5','6','7','8','9','0']
 simbolos = ['.',',',':','!','?','#']
 contraseña =(random.choice(letras))+(random.choice(letras))+(random.choice(numeros))+(random.choice(letrasm))+(random.choice(simbolos))+(random.choice(numeros))+(random.choice(letrasm))+(random.choice(letrasm))+(random.choice(numeros))+(random.choice(letras))+(random.choice(numeros))+(random.choice(letras))+(random.choice(letrasm))+(random.choice(numeros))+(random.choice(letras))+(random.choice(letrasm))+(random.choice(numeros))+(random.choice(letras))
-usuario =input(f"{color.cyan}ELIGE UN USUARIO>>> ")
-vidas = input(f"{color.cyan}QUE LARGURA DE CONTRASEÑA QUIERES>>> ")
+plataforma =input(f"{color.cyan}PARA QUE PLATAFORMA ES LA CONTRASEÑA >>> ")
+usuario =input("ELIGE UN USUARIO >>> ")
+vidas = input("QUE LARGURA DE CONTRASEÑA QUIERES >>> ")
 vidas = int(vidas)
 if vidas >= 18:
+ print("")
  print(f"{color.rojo}LARGURA MAXIMA EXCEDIDA PASARA A SER DE 18{color.fin}")
  time.sleep(3)
 elif vidas < 5:
- print(f"{color.rojo}LARGURA MINIMA PASARA A SER DE  5 {color.fin}")
+ print("")
+ print(f"{color.rojo}POR SEGURIDAD LARGURA MINIMA PASARA A SER DE  5 {color.fin}")
  time.sleep(3)
  vidas = 5
 largura = 0
@@ -62,7 +65,10 @@ for i in contraseña:
 termux.system("clear")
 banner()
 print("")
+print(f"{color.azul}TU PLATAFORMA ES : "+f"{color.amarillo}" + (plataforma) +f"{color.fin}")
 print(f"{color.azul}TU USUARIOS ES : "+f"{color.amarillo}" + (usuario) +f"{color.fin}")
 print(f"{color.azul}TU CONTRASEÑA ES : " + f"{color.amarillo}" + (con) +f"{color.fin}")
+print("")
+print(f"{color.verde}TU CONTRASEÑA SE GUARDO EN CONTRASEÑA.TX {color.fin}")
 salto = "\n"
-termux.system(f"echo 'TU USUARIO ES : ''{usuario}' '{salto}''TU CONTRASENA ES : ''{con}' >contraseña.txt")
+termux.system(f"echo 'PLATAFORMA : ''{plataforma}' '{salto}''TU USUARIO ES : ''{usuario}' '{salto}''TU CONTRASENA ES : ''{con}''{salto}' >>contraseña.txt")
