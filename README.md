@@ -4,7 +4,7 @@
 instalacion
 * apt update && apt upgrade -y
 * apt install git -y
-* git clone https://github.com/Fenrir-00/generador-contrase-as-aleatorias-termux/
+* git clone https://github.com/Fenrir-00/generador-contrase-as-aleatorias-termux
 * cd generador-contrase-as-aleatorias-termux
 * python3 contraseña.py
 
