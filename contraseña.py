@@ -1,20 +1,10 @@
-# from googlesearch import search
 import sys
 from sys import *
 import os as termux
 from os import *
 import os
-import threading
 import time
-import requests
-import traceback
-import string
 import random
-#from contextlib import suppress
-#from binance.exceptions import *
-#from binance.client import Client
-#from binance.enums import *
-#from binance.helpers import round_step_size
 class color:
     morado = '\033[95m'
     blanco = '\033[97m'
