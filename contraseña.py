@@ -37,7 +37,7 @@ plataforma =input(f"{color.cyan}PARA QUE PLATAFORMA ES LA CONTRASEÑA >>> ")
 usuario =input("ELIGE UN USUARIO >>> ")
 vidas = input("QUE LARGURA DE CONTRASEÑA QUIERES >>> ")
 vidas = int(vidas)
-if vidas >= 18:
+if vidas >= 19:
  print("")
  print(f"{color.rojo}LARGURA MAXIMA EXCEDIDA PASARA A SER DE 18{color.fin}")
  time.sleep(3)
