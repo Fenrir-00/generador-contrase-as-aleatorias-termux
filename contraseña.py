@@ -5,6 +5,7 @@ from os import *
 import os
 import time
 import random
+from io import *
 class color:
     morado = '\033[95m'
     blanco = '\033[97m'
@@ -17,14 +18,12 @@ class color:
 
 def banner():
  termux.system("clear")
- print(f"{color.azul}")
- print( """       ##############################""")
- print( """       # ____ ____ _  _ ____ _ ____ #""")
- print( """       # |___ |___ |\ | |__/ | |__/ #""")
- print( """       # |    |___ | \| |  \ | |  \ #""")
- print( """       #                            #""")
- print( """       #          CONTRASEÑA        #""")
- print( """       ##############################""")
+ print(f"""{color.cyan}
+███████╗███████╗███╗░░██╗██████╗░██╗██████╗░
+██╔════╝██╔════╝████╗░██║██╔══██╗██║██╔══██╗                      █████╗░░█████╗░░██╔██╗██║██████╔╝██║██████╔╝
+██╔══╝░░██╔══╝░░██║╚████║██╔══██╗██║██╔══██╗
+██║░░░░░███████╗██║░╚███║██║░░██║██║██║░░██║
+╚═╝░░░░░╚══════╝╚═╝░░╚══╝╚═╝░░╚═╝╚═╝╚═╝░░╚═╝""")
  print(f"{color.fin}")
 banner()
 #termux.system(f"echo '{var}' >cuaderno.txt")
@@ -33,7 +32,7 @@ letrasm =['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 
 numeros = ['1','2','3','4','5','6','7','8','9','0']
 simbolos = ['.',',',':','!','?','#']
 contraseña =(random.choice(letras))+(random.choice(letras))+(random.choice(numeros))+(random.choice(letrasm))+(random.choice(simbolos))+(random.choice(numeros))+(random.choice(letrasm))+(random.choice(letrasm))+(random.choice(numeros))+(random.choice(letras))+(random.choice(numeros))+(random.choice(letras))+(random.choice(letrasm))+(random.choice(numeros))+(random.choice(letras))+(random.choice(letrasm))+(random.choice(numeros))+(random.choice(letras))
-plataforma =input(f"{color.cyan}PARA QUE PLATAFORMA ES LA CONTRASEÑA >>> ")
+plataforma =input(f"{color.verde}PARA QUE PLATAFORMA ES LA CONTRASEÑA >>> ")
 usuario =input("ELIGE UN USUARIO PUEDE SER TU EMAIL >>> ")
 vidas = input("QUE LARGURA DE CONTRASEÑA QUIERES >>> ")
 vidas = int(vidas)
@@ -61,4 +60,6 @@ print(f"{color.azul}TU CONTRASEÑA ES : " + f"{color.amarillo}" + (con) +f"{colo
 print("")
 print(f"{color.verde}TU CONTRASEÑA SE GUARDO EN CONTRASEÑA.TX {color.fin}")
 salto = "\n"
-termux.system(f"echo 'PLATAFORMA : ''{plataforma}' '{salto}''TU USUARIO ES : ''{usuario}' '{salto}''TU CONTRASENA ES : ''{con}''{salto}' >>contraseña.txt")
+fd = open("contraseña.txt","a")
+fd.write(f"PLATAFORMA: {plataforma} {salto}TU USUARIO ES : {usuario} {salto}TU CONTRASEÑA ES: {con}{salto}")
+fd.close()
