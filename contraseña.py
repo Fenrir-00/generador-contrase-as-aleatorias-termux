@@ -27,6 +27,18 @@ def banner():
 ╚═╝░░░░░╚══════╝╚═╝░░╚══╝╚═╝░░╚═╝╚═╝╚═╝░░╚═╝""")
  print(f"{color.fin}")
 banner()
+carga1="""Loading…
+█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒"""
+carga2="""Loading…10%
+███▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒"""
+carga3="""Loading…30%
+█████▒▒▒▒▒▒▒▒▒▒▒▒▒▒"""
+carga4="""Loading…50%
+██████████▒▒▒▒▒▒▒▒▒"""
+carga5="""Loading…70%
+█████████████▒▒▒▒▒▒"""
+carga6="""Loading…100%
+███████████████████"""
 #termux.system(f"echo '{var}' >cuaderno.txt")
 letras =['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 letrasm =['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
@@ -54,6 +66,29 @@ for i in contraseña:
   largura +=1
 termux.system("clear")
 banner()
+print(f"{color.verde}",(carga1))
+time.sleep(2)
+os.system("clear")
+banner()
+print(f"{color.verde}",(carga2))
+time.sleep(2)
+os.system("clear")
+banner()
+print(f"{color.verde}",(carga3))
+time.sleep(2)
+os.system("clear")
+banner()
+print(f"{color.verde}",(carga4))
+time.sleep(2)
+os.system("clear")
+banner()
+print(f"{color.verde}",(carga5))
+time.sleep(2)
+os.system("clear")
+banner()
+print(f"{color.verde}",(carga6))
+time.sleep(2)
+os.system("clear")
 print("")
 print(f"{color.azul}TU PLATAFORMA ES : "+f"{color.amarillo}" + (plataforma) +f"{color.fin}")
 print(f"{color.azul}TU USUARIOS ES : "+f"{color.amarillo}" + (usuario) +f"{color.fin}")
