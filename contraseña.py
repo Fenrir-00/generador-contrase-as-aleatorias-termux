@@ -78,20 +78,20 @@ def menu():
     print("[2]VER CONTRASEÑAS")
     print(f"{color.rojo}[3]BORRA TODAS LAS CONTRASEÑAS")
     print(f"[4]SALIR{color.fin}")
-    eleccion =int(input("ELIJE UN NUMERO >> "))
-    if eleccion == 1 :
+    eleccion =input("ELIJE UN NUMERO >> ")
+    if eleccion == "1" :
         banner()
         generar()
 
-    elif eleccion == 2 :
+    elif eleccion == "2" :
         banner()
         leer()
         time.sleep(5)
         menu()
-    elif eleccion == 3 :
+    elif eleccion == "3" :
      banner()
      borrar()
-    elif eleccion == 4 :
+    elif eleccion == "4" :
      banner()
      salir()
     else:
