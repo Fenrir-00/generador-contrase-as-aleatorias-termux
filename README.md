@@ -1,5 +1,5 @@
 # generador-contraseñas-aleatorias-termux
-* Segurdara la contraseña en un txt 
+* Se gurdara la contraseña en un txt 
 # instalacion
 * apt update && apt upgrade -y
 * apt install git -y
