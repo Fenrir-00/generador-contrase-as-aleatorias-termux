@@ -122,12 +122,23 @@ def leer():
   salir()   
 #borrar 
 def borrar():
-    fd = open("contraseña.txt","w")
-    fd.write("") 
-    fd.close()
-    print(f"{color.rojo} CONTRASEÑAS BORRADAS{color.fin}")
-    time.sleep(3)
-    menu()
+    os.system("clear")
+    banner()
+    print(f"{color.rojo} ESTAS SEGURO QUE QUEIRES BORRAR TUS CONTRASEÑAS")
+    print(f"{color.verde}[1]NO")
+    print(f"{color.rojo}[2]SI{color.fin}")
+    vborrar=int(input("ELIJE UN NUMERO >> "))
+    if vborrar == 2:
+     fd = open("contraseña.txt","w")
+     fd.write("") 
+     fd.close()
+     os.system("clear")
+     banner()
+     print(f"{color.rojo} CONTRASEÑAS BORRADAS{color.fin}")
+     time.sleep(2)
+     menu()
+    else:
+       menu()
 
 
 # salir
