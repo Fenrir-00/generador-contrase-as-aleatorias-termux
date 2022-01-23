@@ -112,7 +112,7 @@ def leer():
  leer = fd.read()
  print(leer)
  fd.close()
- print(f"{color.amarillo}QUE QUEIRES HACER AHORA")
+ print(f"{color.amarillo}QUE QUE QUEIRES HACER AHORA")
  print(f"{color.verde}[1] VOLVER")
  print(f"{color.rojo}[2] SALIR{color.fin}")
  vleer=int(input("ELIJE UN NUMERO >> "))
