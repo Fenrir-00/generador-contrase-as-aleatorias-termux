@@ -204,7 +204,7 @@ def generar():
     print(f"{color.azul}TU USUARIOS ES : "+f"{color.amarillo}" + (usuario) +f"{color.fin}")
     print(f"{color.azul}TU CONTRASEÑA ES : " + f"{color.amarillo}" + (con) +f"{color.fin}")
     print("")
-    print(f"{color.verde}TU CONTRASEÑA SE GUARDO EN CONTRASEÑA.TX {color.fin}")
+    print(f"{color.verde}TU CONTRASEÑA SE GUARDO EN CONTRASEÑA.TXT {color.fin}")
     salto = "\n"
     fd = open("contraseña.txt","a")
     fd.write(f"PLATAFORMA: {plataforma} {salto}TU USUARIO ES : {usuario} {salto}TU CONTRASEÑA ES: {con}{salto}{salto}")
