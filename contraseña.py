@@ -165,6 +165,7 @@ def salir():
     ███████████████████""")
     time.sleep(1)
     os.system("clear")
+    pronto(f"{color.fin}")
     sys.exit()
 
 # generador de contraseña
