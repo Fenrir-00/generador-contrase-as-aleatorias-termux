@@ -1,6 +1,6 @@
 # generador-contraseñas-aleatorias-termux
 * Segurdara la contraseña en un txt 
-instalacion
+#instalacion
 * apt update && apt upgrade -y
 * apt install git -y
 * git clone https://github.com/Fenrir-00/generador-contrase-as-aleatorias-termux
