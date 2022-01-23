@@ -99,7 +99,7 @@ def menu():
            
 def incorrecto():
     banner()
-    print(f"¨{color.rojo}OPCION INCORRECTA{color.fin}")
+    print(f"{color.rojo}   OPCION INCORRECTA{color.fin}")
     time.sleep(3)
     menu()
 
