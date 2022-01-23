@@ -72,7 +72,7 @@ def menu():
     os.system("clear")
     banner()
     carga()
-    print(f"{color.verde}QUE     TE GUSTARIA HACER")
+    print(f"{color.verde}    QUE TE GUSTARIA HACER")
     print("")
     print(f"{color.amarillo}[1]GENERAR CONTRASEÑA")
     print("[2]VER CONTRASEÑAS")
