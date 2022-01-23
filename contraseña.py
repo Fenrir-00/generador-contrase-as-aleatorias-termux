@@ -124,7 +124,7 @@ def leer():
 def borrar():
     os.system("clear")
     banner()
-    print(f"{color.rojo} ESTAS SEGURO QUE QUEIRES BORRAR TUS CONTRASEÑAS")
+    print(f"{color.rojo}ESTAS SEGURO QUE QUEIRES BORRAR TUS CONTRASEÑAS")
     print(f"{color.verde}[1]NO")
     print(f"{color.rojo}[2]SI{color.fin}")
     vborrar=int(input("ELIJE UN NUMERO >> "))
