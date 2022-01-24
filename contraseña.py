@@ -238,4 +238,6 @@ def generar():
     fd = open("contraseña.txt","a")
     fd.write(f"PLATAFORMA: {plataforma} {salto}TU USUARIO ES : {usuario} {salto}TU CONTRASEÑA ES: {con}{salto}{salto}")
     fd.close()
+    time.sleep(5)
+    menu()
 menu()
