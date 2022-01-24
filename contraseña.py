@@ -79,6 +79,17 @@ def menu():
     print(f"{color.rojo}[3]BORRA TODAS LAS CONTRASEÑAS")
     print(f"[4]SALIR{color.fin}")
     eleccion =input("ELIJE UN NUMERO >> ")
+    while len(eleccion) >= 2:
+     print(len(eleccion))
+     os.system("clear")
+     banner()
+     print(f"{color.verde}    QUE TE GUSTARIA HACER")
+     print("")
+     print(f"{color.amarillo}[1]GENERAR CONTRASEÑA")
+     print("[2]VER CONTRASEÑAS")
+     print(f"{color.rojo}[3]BORRA TODAS LAS CONTRASEÑAS")
+     print(f"[4]SALIR{color.fin}")
+     eleccion =input("ELIJE UN NUMERO >> ")
     if eleccion == "1" :
         banner()
         generar()
