@@ -1,4 +1,4 @@
-# generador-contraseñas-aleatorias-termux
+![Screenshot](contraseña.png)
 * Se guardara la contraseña en un txt 
 # instalacion
 * apt update && apt upgrade -y
